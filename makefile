@@ -65,7 +65,7 @@ unit-test:
 
 ## Run the coverage check
 check-coverage:
-	$(call execute_in_env, PYTHONPATH=${PYTHONPATH} pytest --cov=src_2024)
+	$(call execute_in_env, PYTHONPATH=${PYTHONPATH} pytest --cov-report term-missing --cov=src_2024)
 
 ## Run all checks
 run-checks: run-black unit-test check-coverage
