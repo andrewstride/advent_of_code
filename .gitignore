@@ -1,0 +1,7 @@
+venv
+*__pycache__*
+requirements.txt
+.coverage
+**/day_*.md
+**/day_*input.txt
+**/day_*ans.txt
