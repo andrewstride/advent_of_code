@@ -38,13 +38,14 @@ def print_queue(print_rules, pt2=False) -> int:
                             continue
             corrected_updates.append(update)
             include = True
-    middle_total = 0
     if pt2:
-        for update in corrected_updates:
-            middle = int((len(update) - 1) / 2)
-            middle_total += update[middle]
-        return middle_total
-    for update in valid_updates:
+        return total_middles(corrected_updates)
+    return total_middles(valid_updates)
+
+
+def total_middles(updates):
+    middle_total = 0
+    for update in updates:
         middle = int((len(update) - 1) / 2)
         middle_total += update[middle]
     return middle_total
