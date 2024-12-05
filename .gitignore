@@ -5,3 +5,4 @@ requirements.txt
 **/day_*.md
 **/day_*input.txt
 **/day_*ans.txt
+tests*
